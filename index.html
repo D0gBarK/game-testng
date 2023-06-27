@@ -1,0 +1,13 @@
+<audio id="myAudio">
+  <source src="test.m4a" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+
+<script>
+  document.addEventListener("keydown", function(event) {
+    if (event.key === "o") {
+      var audio = document.getElementById("myAudio");
+      audio.play();
+    }
+  });
+</script>
