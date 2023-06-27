@@ -1,8 +1,54 @@
-<audio id="myAudio">
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Five Nights at Freddy's Menu</title>
+  <style>
+    body {
+      background-color: #000;
+      color: #fff;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+    }
+    h1 {
+      margin-top: 100px;
+      font-size: 48px;
+    }
+    ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 50px 0;
+    }
+    li {
+      display: inline-block;
+      margin: 0 20px;
+    }
+    a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 24px;
+      padding: 10px 20px;
+      border: 2px solid #fff;
+      border-radius: 5px;
+    }
+    a:hover {
+      background-color: #fff;
+      color: #000;
+    }
+  </style>
+</head>
+<body>
+  <h1>Five Nights at Freddy's</h1>
+  <ul>
+    <li><a href="#">New Game</a></li>
+    <li><a href="#">Options</a></li>
+    <li><a href="#">Exit</a></li>
+  </ul>
+  <audio id="myAudio">
   <source src="test.mp3" type="audio/mpeg">
   Your browser does not support the audio element.
 </audio>
-
 <script>
   document.addEventListener("keydown", function(event) {
     if (event.key === "o") {
@@ -11,3 +57,5 @@
     }
   });
 </script>
+</body>
+</html>
